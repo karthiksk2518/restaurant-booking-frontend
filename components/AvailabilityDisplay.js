@@ -13,7 +13,7 @@ const AvailabilityDisplay = ({ onBackToForm }) => {
         
         setLoading(true);
         try {
-            const response = await axios.get(`https://restaurant-booking-backend-x2r6.onrender.com/availability?date=${date}&time=${time}`);
+            const response = await axios.get(`https://restaurant-booking-backend-x2r6.onrender.com/api/bookings/availability?date=${date}&time=${time}`);
             setAvailability(response.data);
         } catch (error) {
             alert('Error fetching availability');
