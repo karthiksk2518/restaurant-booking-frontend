@@ -48,6 +48,8 @@
     transition: background-color 0.3s ease;
     border: none;
     border-radius: 5px;
+    font-size: 15px;
+    color: white;
 }
 
 .availabilityButton:hover {
